@@ -31,7 +31,7 @@
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
@@ -43,7 +43,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Me</a>
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
                     </li>
                 </ul>
 
@@ -54,6 +54,8 @@
             </div>
 
             <div class="nav__buttons">
+                <!-- Theme button-->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
                 <!-- Toggle button-->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-4-line"></i>
@@ -161,7 +163,7 @@
         </section>
 
         <!--==== SERVICES ====-->
-        <section class="services section">
+        <section class="services section" id="services">
             <h2 class="section__title-2">
                 <span>Services.</span>
             </h2>
@@ -481,13 +483,33 @@
 
     <!--==== FOOTER ====-->
     <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
 
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved By <a href="">𝓀𝒶𝓂𝒞𝑜𝒹𝑒𝓈</a>
+            </span>
+        </div>
     </footer>
 
     <!--==== SCROLL UP ====-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
     <!--===== SCROLLREVAEAL =====-->
-    <script src=""></script>
+    <script src="scrollreveal.js"></script>
 
     <!--==== EMAIL JS ====-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
